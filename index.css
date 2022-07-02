@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-attachment: fixed;
+}
+
+*{box-sizing: border-box}
+
+
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Typography */
+
+p{
+    font-size: 0.75rem;
+    color: hsl(240, 6%, 50%);
+}
+
+h2{
+    font-size: 0.813rem;
+    color: hsl(238, 29%, 16%);
+    font-weight: normal;
+}
+
+/* Mobile Layout */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.arrow{
+    float: right;
+    margin-top: 0.45em;
+}
+
+.teacher, .shade{
+   position: absolute;
+   margin-top: 3.3em;
+}
+
+.teacher{
+    margin-right: 1.8em;
+}
+
+.teacher2, .box2, .shade2{ 
+    display: none;
+}
+
+.shade{
+    margin-top: 9.7em;
+}
+
+/* Card Dropdown Function*/
+
+.dropdowns{
+    border-radius: 1em;
+    max-width: 40rem;
+    background-color: white;
+    padding: 6.5em 1.5em 2.5em 1.5em;
+    margin-bottom: 5em;
+    margin-top: 10em;
+    max-height: 460px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.dropdown-function{
+    width: 16.8rem;
+}
+
+.question{
+    cursor: pointer;
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    padding-bottom: 1.1em;
+    margin-top: 1.2em;
+}
+
+.question:hover{
+    color: hsl(14, 88%, 65%);
+    transition: 0.25s;
+}
+
+.dropdown-content{
+    display: none;
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    padding-bottom: 1.1em;
+    line-height: 20px;
+}
+
+
+/* Javascript Styling */
+
+.clicked{
+    font-weight:bold;
+}
+
+.dropdown-display{
+    display: block;
+}
+
+.remove-border-question{
+    border-bottom: none;
+    padding: 0;
+}
+
+
+.arrow3{
+    transition-duration: 0.4s;
+    transform: rotate(180deg);
+}
+
+.arrow4{
+    transition-duration: 0.4s;
+    transform: rotate(90);
+}
+
+
+@media(min-width: 825px){
+   .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1em;
+    }   
+
+    .title{
+        margin-bottom: 1.2em;
+    }
+
+    .teacher, .shade{
+        display: none;
+    }
+
+     .teacher2, .box2, .shade2{
+         display: block;
+         position: absolute;
+     }
+
+     .teacher2{
+        margin: 0;
+        padding: 0;
+        margin-left: -63.5px;
+        top: 145px;
+        height: 270px;
+        width: 350px;
+        clip-path: inset(0 0 0 18%)
+     }
+
+     .box2{
+        height: 135px;
+        width: 135px;
+        margin-left: -66px;
+        top: 248px;
+        z-index: 1;
+     }
+
+     .shade2{
+         width: 300px;
+         height: 300px;
+         position: absolute;
+     }
+
+    .dropdowns{
+        margin-top: 4em;
+        margin-bottom: 0;
+        padding: 2.5em 26em 3.5em 25em;
+        max-height: 460px;
+        overflow: hidden;
+        overflow-y: scroll;
+        max-height: 429px;
+    }
+
+    .dropdown-function{
+        width: 22rem;
+    }
+
+}
+
+.shade-desktop{
+    position: absolute;
+    margin-left: -85em;
+    top: -1em;
+    margin-top: 0;
+}
+
+.shade2{
+    height: 550px;
+    width: 550px;
+    clip-path: inset(17.5% 0 0 49%);
+}
+
+.teacher-desktop{
+ z-index: 1;
+}
+
